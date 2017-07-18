@@ -14,6 +14,7 @@ def query(tagBox):
 	else:
 		cursor.execute("SELECT * FROM NOTICIAS")
 	noticia = choice(cursor.fetchall())
+	conn.close()
 	return noticia
 
 @app.route('/', methods=['GET','POST'])
@@ -22,18 +23,9 @@ def index():
 
 @app.route('/nutricao')
 def nutricao():
-	conn = sqlite3.connect("noticias.db")
-	cursor = conn.cursor()
-	cursor.execute("SELECT * FROM NOTICIAS WHERE TAGBOX = 'nutricao'")
-	noticia = choice(cursor.fetchall())
-	tag = noticia[1]
-	img = noticia[2]
-	title = noticia[3]
-	font = noticia[4]
-	description = noticia[5]
-	text = noticia[6]
-	conn.close()
-	return render_template('index.html', tagBox=tag, imgBox=img, titulo=title, fontBox=font,descricao=description, mainBox=text)
+	noticia = query("nutricao")
+	return render_template('index.html', tagBox=noticia[1], imgBox=noticia[2], titulo=noticia[3],
+	 fontBox=noticia[4], descricao=noticia[5], mainBox=noticia[6])
 
 @app.route('/saude')
 def saude():
