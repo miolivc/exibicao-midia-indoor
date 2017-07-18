@@ -12,13 +12,13 @@ def query(tagBox):
 	if tagBox != None:
 		cursor.execute("SELECT * FROM NOTICIAS WHERE TAGBOX = ?", tagBox)
 	else:
-		cursor.execute("SELECT * FROM NOTICIAS)
+		cursor.execute("SELECT * FROM NOTICIAS")
 	noticia = choice(cursor.fetchall())
 	return noticia
 
 @app.route('/', methods=['GET','POST'])
 def index():
-	return self.query()
+	return "<h1>Você não escolheu uma tag!</h1>"
 
 @app.route('/nutricao')
 def nutricao():
