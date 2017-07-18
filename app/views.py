@@ -1,5 +1,5 @@
 #	-*- coding: utf-8 -*-
-#	usr/bin/python3	
+#	usr/bin/python3
 
 from app import app
 from flask import render_template
@@ -9,23 +9,16 @@ import sqlite3
 def query(tagBox):
 	conn = sqlite3.connect("noticias.db")
 	cursor = conn.cursor()
-	if tagBox != nil:
+	if tagBox != None:
 		cursor.execute("SELECT * FROM NOTICIAS WHERE TAGBOX = ?", tagBox)
 	else:
 		cursor.execute("SELECT * FROM NOTICIAS)
 	noticia = choice(cursor.fetchall())
-	tag = noticia[1]
-	img = noticia[2]
-	title = noticia[3]
-	font = noticia[4]
-	description = noticia[5]
-	text = noticia[6]
-	conn.close()
 	return noticia
 
 @app.route('/', methods=['GET','POST'])
 def index():
-	return query(nil)
+	return self.query()
 
 @app.route('/nutricao')
 def nutricao():

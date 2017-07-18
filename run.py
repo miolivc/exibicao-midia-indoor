@@ -1,3 +1,4 @@
+#!usr/bin/python3
 #!flask/bin/python
 
 from app import app
