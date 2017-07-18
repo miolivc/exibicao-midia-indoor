@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/energiaesaude.css')}}">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<div id="bg_wrapper">
+			<img id="bg" src="{{url_for('static', filename='img/energiaesaude/bg.jpg')}}">
+			<div id="header">
+				<b><p id="title" name="titulo">{{titulo}}</p></b>
+				<p id="description" name="descricao">{{descricao}}</p>
+			</div>
+			<div id="text_wrapper">
+				<p id="text" name="text">{{mainBox}}</p>
+			</div>
+			<img id="img" name="img" src="{{imgBox}}">
+			<div id="font_wrapper">
+				<p id="font" name="font"><b>Fonte: </b>{{fontBox}}</p>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Avian';
+  src: url('../fonts/avian.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'calibriFont';
+  src: url('../fonts/Calibri.ttf') format('truetype');
+}
+
+#bg_wrapper{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+#bg{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+	position: fixed;
+	width: 23.5vw;
+	hight: auto;
+	top: 2.5vw;
+	right: 5.5vw;
+}
+
+#fundo{
+	position: fixed;
+	width: 86vw;
+	height: 69vh;
+	background-color: gray;
+	bottom: 6vh;
+	left: 7vw;
+	border-radius: 1vw;
+}
+
+#img{
+	float: left;
+	height: 71vh;
+	width: 33vw;
+	background-color: white;
+	margin-left: 2vw;
+	margin-top: -10vh;
+	border-radius: 2vw;
+	overflow: hidden;
+}
+
+#title_wrapper{
+	float: right;
+	height: 12vh;
+	width: 51vw;
+	background-color: #BBBBBB;
+	margin-right: -1vw;
+	margin-top: -0.7vw;
+	border-radius: 1.5vw;
+}
+
+#title{
+	font-family: 'calibriFont';
+	font-style: italic;
+	font-size: 3.7vw;
+	font-weight: bold;
+	margin: 1.1vw auto;
+}
+
+#text_wrapper{
+	float: right;
+	height: 47.8vh;
+	width: 48vw;
+	background-color: black;
+	margin-right: 0.5vw;
+	margin-top: 1.2vw;
+	overflow: hidden;
+}
+
+#text{
+	font-size: 2.1vw;
+	color: white;
+	text-align: justify;
+	font-family: 'calibriFont';
+	padding: 1vw;
+	margin-top: -0.2vw;
+}
+
+#font{
+	position: fixed;
+	color: white;
+	font-size: 1.6vw;
+	font-family: 'Avian';
+	margin: 0 auto;
+	left: 9vw;
+	top: 88vh;
+}

@@ -1,0 +1,105 @@
+@font-face{
+	font-family: 'futuraFont';
+	src: url('../fonts/Futura.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'centuryGothic';
+	src: url('../fonts/Century Gothic.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'arialFont';
+	src: url('../fonts/Arial.TTF') format('truetype');
+}
+
+#bg_wrapper{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+#bg{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	z-index: 0;
+}
+
+#header{
+	position: relative;
+	width: 100%;
+	height: 38%;
+	background: url("../img/energiaesaude/barra.png") no-repeat;
+	background-size: 100% 100%;
+	text-align: left;
+	display: block;
+	z-index: 100;
+}
+
+#title{
+	font-family: 'futuraFont';
+	font-size: 450%;
+	float: left;
+	color: #373435;
+	font-weight: 900;
+	padding-left: 5%;
+	margin-top: 3vh;
+}
+
+#description{
+	float: left;
+	font-size: 300%;
+	margin-top: -3vh;
+	padding-left: 5%;
+	color: white;
+	font-weight: 900;
+	font-family: 'centuryGothic';
+	width: 60vw;
+}
+
+#text_wrapper{
+	position: absolute;
+	height: 47vh;
+	width: 45vw;
+	z-index: 100;
+	left: 5%;
+	margin-top: 2vh;
+}
+
+#text{
+	margin: 0 auto;
+	font-family: 'arialFont';
+	text-align: justify;
+	font-size: 34pt;
+}
+
+#img{
+	position: absolute;
+	right: 5%;
+	top: 25%;
+	height: 75vh;
+	width: 42vw;
+	background-color: red;
+	-webkit-clip-path: polygon(0 100%, 90% 100%, 100% 0, 10% 0);
+	-moz-clip-path: polygon(0 100%, 90% 100%, 100% 0, 10% 0);
+}
+
+#font_wrapper{
+	position: absolute;
+	height: 10vh;
+	width: 45vw;
+	left: 5%;
+	bottom: 4vh;
+}
+
+#font{
+	font-family: 'arialFont';
+	font-size: 150%;
+}

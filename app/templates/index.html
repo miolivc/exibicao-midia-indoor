@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/reset.css')}}">
+		{% if tagBox == "saude" %}
+		<link id="style" rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/saude.css')}}">
+		{% elif tagBox == "dieta" %}
+		<link id="style" rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/dieta.css')}}">
+		{% elif tagBox == "nutricao" %}
+		<link id="style" rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/nutricao.css')}}">
+		{% endif %}
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<center><div id="logo"></div></center>
+		<div id="content_wrapper">
+			<div id="header">
+				<p id="title" name="title">{{titulo}}</p>
+				<p id="description" name="description">{{descricao}}</p>
+			</div>
+			<div id="img_wrapper">
+				<img id="img" name="img" src="{{imgBox}}">
+			</div>
+			<div id="text_wrapper">
+				<p id="text" name="text">{{mainBox}}</p>
+			</div>
+			<p id="font" name="font"><b>Fonte: </b>{{fontBox}}</p>
+		</div>
+	</body>
+
+</html>

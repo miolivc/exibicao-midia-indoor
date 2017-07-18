@@ -1,0 +1,128 @@
+@font-face{
+	font-family: 'calibriFont';
+	src: url('../fonts/Calibri.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'arialRounded';
+	src: url('../fonts/Arial.TTF') format('truetype');
+}
+
+@font-face{
+	font-family: 'verdanaFont';
+	src: url('../fonts/Verdana.ttf') format('truetype');
+}
+
+body{
+	background-color:  #24B24E;
+	overflow: hidden;
+}
+
+#logo{
+	margin: 1vh auto;
+	height: 20vh;
+	width: auto;
+	background-image: url('../img/logos/logo_verde.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#content_wrapper{
+	margin: 12vh auto;
+	background-color: #197B34;
+	width: 88vw;
+	height: 62vh;
+	border-radius: 1vh;
+}
+
+#header{
+	position: fixed;
+	top: 22vh;
+	left: 0;
+	width: 100vw;
+	height: 30vh;
+	background-image: url('../img/logos/barra_verde.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 92vw auto;
+}
+
+#title{
+	margin: 6.5vh 17vw;
+	text-align: left;
+	color: #0A430E;
+	font-size: 58pt;
+	font-weight: bold;
+	font-style: italic;
+	font-family: calibriFont;
+}
+
+#description{
+	margin: -3vh 17vw;
+	font-family:calibri;
+	color: white;
+	font-family: arialRounded;
+	font-weight: bold;
+	font-size: 34pt;
+	width: 90vw;
+}
+
+#img_wrapper{
+	border-width: 0.6vw;
+	border-style: solid;
+	border-color: #0A430E;
+	border-radius: 2.3vw;
+	position: fixed;
+	background-color: #0A430E;
+	border-color: #0A430E;
+	left: 61%;
+	right: 2.55%;
+	top: 51%;
+	width: 34vw;
+	height: 40vh;
+}
+
+#img{
+	margin: auto;
+	width: 34vw;
+	height: 40vh;
+	border-radius: 2vw;
+}
+
+#text_wrapper{
+	position: fixed;
+	background-color: #24B24E;
+	left: 7%;
+	top: 50%;
+	width: 53vw;
+	height: 43vh;
+	font-size: 2vw;
+	overflow: hidden;
+	line-height: 43vh;
+}
+
+#text{
+	margin: 0 auto;
+	margin-bottom: 2pt;
+	margin-left: 12pt;
+	margin-right: 12pt;
+	margin-top: 2pt;
+	text-align: justify;
+	color: #0A430E;
+	font-family: calibriFont;
+	font-size: 31pt;
+	line-height: 1.2;
+    display: inline-block;
+    vertical-align: middle;
+	font-weight: bold;
+}
+
+#font{
+	position: fixed;
+	color: white;
+	font-family: verdanaFont;
+	left: 7vw;
+	bottom: 5vh;
+	font-size: 16pt;
+}
