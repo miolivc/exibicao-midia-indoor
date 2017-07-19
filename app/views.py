@@ -39,9 +39,9 @@ def dieta():
 @app.route('/energiaesaude')
 def energiaesaude():
 	noticia = query("energiaesaude")
-	return render_template('index.html', tagBox=noticia[1], imgBox=noticia[2], titulo=noticia[3], fontBox=noticia[4], descricao=noticia[5], mainBox=noticia[6])
+	return render_template('energiaesaude.html', tagBox=noticia[1], imgBox=noticia[2], titulo=noticia[3], fontBox=noticia[4], descricao=noticia[5], mainBox=noticia[6])
 
 @app.route('/belezamasculina')
 def belezamasculina():
 	noticia = query("belezamasculina")
-	return render_template('index.html', tagBox=noticia[1], imgBox=noticia[2], titulo=noticia[3], fontBox=noticia[4], descricao=noticia[5], mainBox=noticia[6])
+	return render_template('belezamasculina.html', tagBox=noticia[1], imgBox=noticia[2], titulo=noticia[3], fontBox=noticia[4], descricao=noticia[5], mainBox=noticia[6])
